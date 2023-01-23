@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href=" Logo.JPG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>All Online Learning Platform</title>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="Logo.JPG" alt="logo" class="h-16 w-20">
+        <span class="ml-3 text-xl">Learning Journey</span>
+      </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 cursor-pointer hover:text-sky-500 hover:text-xl">Home</a>
+      <a class="mr-5 cursor-pointer hover:text-sky-500 hover:text-xl">Pricing</a>
+      <a class="mr-5 cursor-pointer hover:text-sky-500 hover:text-xl">About us</a>
+
+      <input type="text" placeholder="Search ......." class="w-56 h-10 ml-10 border-2 border-gray-300 p-3">
+    </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header><hr>
+
+
+<div class="container">
+<div class="all_course  grid grid-cols-4" id="all_course">
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/whitehat.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">WhiteHat jr</h5>
+      <p class="mb-0">WhiteHat Jr is an Indian ed-tech startup and coding, math , music, and art to kids  live video classes. It was founded in 2018 and is targeted at children aged 6 years to 14 years students.</p>
+      <a href="https://www.whitehatjr.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/byjus.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Byju's</h5>
+      <p class="mb-0">Byju's is an education tutoring app  and Learning program has started for classes 1 to 12.  It also trains students for examinations in India such as IIT-JEE, NEET, CAT, IAS.</p>
+      <a href="https://www.byjus.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/vadantu.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Vedantu</h5>
+      <p class="mb-0">It  provides services to students from grades 4 to 12 of ICSE and CBSE. The company's business is live online tutoring in  Hindi, English, Sanskrit, French, and etc science and social science.</p>
+      <a href="https://www.vedantu.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/unacademy.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Unacademy</h5>
+      <p class="mb-0">Unacademy prepares students for various competitive exams(like JEE, NEET, UPSC, Boards etc.), as well as provides content on foundational (K-12) and skill building courses.</p>
+      <a href="https://unacademy.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/toppr.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Toppr</h5>
+      <p class="mb-0">We are an extremely passionate team of engineers, educators and designers making consistent strides in product innovation to enhance user experience.</p>
+      <a href="https://www.toppr.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/coursera.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Coursera</h5>
+      <p class="mb-0">It is a U.S.-based massive open online course, and it access to online courses and degrees from leading universities and companies.</p>
+      <a href="https://in.coursera.org/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/cuemath.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">CueMath</h5>
+      <p class="mb-0">It is an ed company focused on math learning for K-12 students. Our aim is to create invincible problem-solvers who will go on to solve humanity's problems.</p>
+      <a href="https://www.cuemath.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/bhanzu.jpg" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Bhanzu</h5>
+      <p class="mb-0">helps students become 4x quicker and better at math by nurturing their cognitive abilities and building their core math acumen.</p>
+      <a href="https://bhanzu.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/ninjas.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Coding Ninjas</h5>
+      <p class="mb-0">kids learn to code while building their own video games in a fun, safe. Kids gain confidence, resourcefulness, logic, problem solving skills & etc</p>
+      <a href="https://www.codingninjas.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+  
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/udemy.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Udemy</h5>
+      <p class="mb-0">It is a global destination for teaching and learning online. This platform has more than 213,000 courses, and 74,000 teaching courses in over 75 languages.</p>
+      <a href="https://www.udemy.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/yellow_class.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Yellow Class</h5>
+      <p class="mb-0">It is an innovative online community of mothers focused on extracurricular learning of their kids. & is a free platform that conducts online hobby class.</p>
+      <a href="https://www.yellowclass.com/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/skill_share.png" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Skill Share</h5>
+      <p class="mb-0">It has more than 24,000 lessons in various disciplines. & are made out of a series of small videos, class projects, and etc, interaction through meeting.</p>
+      <a href="https://www.skillshare.com/en/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+  <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-7 ml-7" style="width: 18rem;">
+    <img src=" online_class_image/physics_w.jpg" class="w-full rounded rounded-t h-36" alt="...">
+    <div class="flex-auto p-6">
+      <h5 class="mb-3 text-lg font-semibold underline">Physics Wallah</h5>
+      <p class="mb-0">It provides affordable and comprehensive learning experience to students of classes 6 to 12 and those preparing for JEE and NEET exams.</p>
+      <a href="https://www.pw.live/" class="inline-block align-middle text-center select-none border mt-2 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Go to Web</a>
+    </div>
+  </div>
+
+</div>
+</div>l
+
+
+<div class="bg-gray-100">
+  <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+    <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Learning Journey —
+      <a href="https://about.me/Purab_singi" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Purab_Singi</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
+

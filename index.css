@@ -1,0 +1,81 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 700px) {
+    
+    body{
+        background-color: white;
+    }
+    
+    .container{
+      display: block;
+    }
+
+    .home_img{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    
+    .classes{
+        display: inline-block;
+    }
+    
+  }
+
+  @media only screen and (max-width: 805px) {
+    
+    #our_courses{
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 698px) {
+    
+    #header{
+      display: block;
+    }
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    
+.all_course{
+  grid-template-columns: min-content;
+}
+  }
+
+
